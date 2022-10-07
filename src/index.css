@@ -1,0 +1,116 @@
+:root{
+  --main: #be2596;
+  --sub:#2596be;
+  --dim:#040f13;
+  --bright:#d3eaf2;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+  background-color: var(--bright);
+
+}
+
+.App{
+  display:flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+.calculator{
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.display{
+  padding: 16px;
+  text-align: right;
+  background-color: var(--bright) ;
+  color:var(--dim) ;
+  font-size: 2rem;
+  font-weight: 300;
+  border-radius: 10px 0px ;
+  margin-bottom: 10px;
+  box-shadow: inset 5px 3px 7px 0 rgb(190, 190, 190);
+  
+
+}
+.display span{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10px;
+  color: #be2596;
+  
+}
+button{
+  appearance:;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: 400ms;
+}
+.functionality{
+  display: flex;
+  
+}
+
+.functionality button {
+  flex: 1 1 0%;
+  background-color: var(--main);
+  font-weight: 800;
+}
+.functionality button:hover{
+  background-color:white;
+  color: var(--main);
+  border-top: 0.04px solid var(--main);
+}
+.digits{
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+.digits button{
+  flex: 1 1 33.333%;
+  max-width: 34%;
+  background-color:white;
+  color:var(--dim);
+  box-shadow: inset 2px 1px 10px 0 rgb(209, 209, 209);
+  
+  
+} 
+.digits button:hover{
+  background-color:var(--bright) ;
+  transform: scale(1.04);
+}
+.digits button:active{
+  color:var(--main);
+  }
+.digits .equals{
+  background-color:var(--main);
+  color: white;
+  border-radius: 0px 0px 10px 0px;
+ 
+}
+.digits .equals:hover{
+  background-color:white;
+  color: var(--main);
+}
+.functionality .slash{
+  border-radius: 10px 0px 0px 0px;
+}
